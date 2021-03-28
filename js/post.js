@@ -60,29 +60,23 @@ function toggleEditSave(){
 function enableEditableText(){
   var getBlogContentEle = document.getElementById('blogBody');
   var getBlogContent = getBlogContentEle.innerText;
-
-  //Div element
   var getDiv = document.getElementById('blogBodyId');
-  //Create a input element
-  var inputElement = '<textarea class="txtBlog" id="txtEditedBlog" rows="10" cols="220">'+
-  getBlogContent+ '</textarea>'
-  //Update the Div element
+  var inputElement = '<textarea class="txtBlog" id="txtEditedBlog" rows="10" cols="220">'+ getBlogContent+ '</textarea>';
+
   getDiv.innerHTML = inputElement; 
 }
+
+
 function updateEditedBlog(){
   var editedBlog = document.getElementById('txtEditedBlog');
-
   var textEdited = editedBlog.innerHTML;
-
-  //(editedBlog.innerHTML);
-
   //.toString();
-  
   var pElement = '<p id="blogBody">'+ textEdited + '</p>';
   var getDiv = document.getElementById('blogBodyId');
   getDiv.innerHTML=pElement;
 
 }
+
 function addComment(){
   console.log("Inside add comment");
   var x = document.getElementById("txtCommentCommentPost").addEventListener("onchange", function(){
@@ -95,4 +89,6 @@ function addComment(){
   var pElement = '<p >'+ x + '</p>';
   var getDiv = document.getElementById('listAllComments');
   getDiv.innerHTML = pElement + getDiv.innerHTML;
+
+
 }
