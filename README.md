@@ -2,17 +2,17 @@
 
 # Tech Stack Used:
 <ul>
-  <li>Html>
+  <li>Html</li>
     <li>Css</li>
     <li>Javascript</li>
     <li>Bootstrap 4</li>
   </ul>
 
-# Editor
+# Editor:
 <h3>Visual Stdio Code</h3>
 
 
 
 # Developer and Designed By
-<h2>SHIVANT KUMAR PANDEY</h2>
+<h3>SHIVANT KUMAR PANDEY</h3>
 
