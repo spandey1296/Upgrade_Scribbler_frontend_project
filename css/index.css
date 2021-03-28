@@ -3,7 +3,7 @@ html{
   width:100%
 }
 body{
-    background: url('../images/background.jpg');
+   background: url('background.jpg');
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: center center;
@@ -13,9 +13,7 @@ body{
    overflow:hidden;
    display: block;
    height: 100%;
-
 }
-
 #main-container-div{
   display: flex;
   flex-direction: column;
@@ -63,3 +61,4 @@ textarea{
   height: 70%;
 }
 
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
