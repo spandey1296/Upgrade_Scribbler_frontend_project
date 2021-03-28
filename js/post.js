@@ -65,19 +65,20 @@ function enableEditableText(){
   var getDiv = document.getElementById('blogBodyId');
   //Create a input element
   var inputElement = '<textarea class="txtBlog" id="txtEditedBlog" rows="10" cols="220">'+
-  getBlogContent+
-  '</textarea>'
+  getBlogContent+ '</textarea>'
   //Update the Div element
-  getDiv.innerHTML = inputElement;
+  getDiv.innerHTML = inputElement; 
 }
 function updateEditedBlog(){
   var editedBlog = document.getElementById('txtEditedBlog');
 
-  var textEdited = (editedBlog.innerHTML).toString();
+  var textEdited = editedBlog.innerHTML;
+
+  //(editedBlog.innerHTML);
+
+  //.toString();
   
-  var pElement = '<p id="blogBody">'+
-  textEdited+
-  '</p>';
+  var pElement = '<p id="blogBody">'+ textEdited + '</p>';
   var getDiv = document.getElementById('blogBodyId');
   getDiv.innerHTML=pElement;
 
