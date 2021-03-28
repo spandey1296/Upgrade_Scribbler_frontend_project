@@ -69,8 +69,7 @@ function enableEditableText(){
 
 function updateEditedBlog(){
   var editedBlog = document.getElementById('txtEditedBlog');
-  var textEdited = editedBlog.innerHTML;
-  //.toString();
+  var textEdited = editedBlog.innerHTML.toString();
   var pElement = '<p id="blogBody">'+ textEdited + '</p>';
   var getDiv = document.getElementById('blogBodyId');
   getDiv.innerHTML=pElement;
